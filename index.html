@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<title>我喜欢你❤️爱收集资源网</title>
+<title>我喜欢你❤️</title>
 <!-- style -->
 <link type="text/css" rel="stylesheet" href="css/theme.css">
 <script src="js/jquery-2.0.3.min.js"></script>
@@ -47,7 +47,7 @@
 				<li onclick="oy_show_benefit()">No&nbsp;&nbsp;✖</li>
 			</ul>
 			<div id="div_oy_note" onclick="oy_hide_note()">
-				<img src="images/emoji_kelian.jpg" alt=""><br>请告诉我Yes！
+				<img src="images/emoji_kelian.jpg" alt=""><br>不要拒绝我好不好嘛！
 				<div id="div_oy_note_close">✖</div>
 			</div>
 			<div id="div_oy_yes">
@@ -103,7 +103,7 @@ init_viewport();
 var theme = 'pure_words';
 console.log('theme ->' + theme);
 var theme_content = {
-	"pure_words_content": "遇见你是我所有美好故事的开始，所以，请别放开我的手，也别缺席我的将来，因为一辈子和你在一起才叫将来<um style='color: #F44336;'>💕</um>",
+	"pure_words_content": "遇见你是我所有美好故事的开始，所以，请别放开我的手，也别缺席我的将来，因为一辈子和你在一起才叫将来<um style='color: #F44336;'>💕</um><br>by-朱伟",
 	"typed_bool": "typed_y",
 	"cursor_char": "cursor_heart",
 	"bg_style_pure_words": "bg_opacity",
@@ -144,7 +144,7 @@ var typed_bool;
 var interval_pw_height;
 var height_div_pw = $(".div_pure_words_height").height();
 function init_pure_words() {
-	$(".div_pure_words_height").html(pure_words_content + '22222'); //初始化复制内容，撑开文档高度            
+	$(".div_pure_words_height").html(pure_words_content + '22222'); //初始化复制内容，撑开文档高度
 	// 初始化设置div的bg图片 初始化设置div的bg图片
 	if (typeof(theme_content['bg_style_pure_words']) != 'undefined' && theme_content['bg_style_pure_words'] == 'bg_opacity') {
 		if (typeof(theme_content['bg_img']) != 'undefined' && theme_content['bg_img'] != '') {
@@ -153,7 +153,7 @@ function init_pure_words() {
 			});
 		}
 	}
-	//以下是打字效果的js 
+	//以下是打字效果的js
 	if (typeof(theme_content['cursor_char']) != 'undefined' && theme_content['cursor_char'] != '') {
 		switch (theme_content['cursor_char']) { //设置打字光标的样式
 		case 'cursor_heart':
@@ -213,7 +213,7 @@ function display_pure_words() {
 			contentType: 'html',
 			//值为html时，将打印的文本标签直接解析html标签
 			onComplete: function(abc) {
-				// console.log(abc); 
+				// console.log(abc);
 				console.log('finished typing words');
 				// console.log($('#span_pw_typed').height()-$(".div_pure_words_height").height());
 			},
@@ -225,7 +225,7 @@ function display_pure_words() {
 	init_attachment();
 }
 var start_content = {
-	chase_title: "做我女朋友好不好<um style='color: #F44336;'>💕</um>",
+	chase_title: "杨利沙小姐姐<um style='color: #F44336;'>💕</um><br/>做我女朋友好不好<um style='color: #F44336;'>💕</um>",
 	chase_text: "承蒙你的出现，够我喜欢好多年，我希望，以后你能用我的名字拒绝所有人<um style='color: #F44336;'>💕</um>",
 	chase_benefit: ["你是我拔掉氧气罐都想吻的人", "你是我跑完8000米还想拥抱的人", "你是我自罚三杯都不肯开口的秘密", "你是我赴汤蹈火都不肯放下的执着", "你是我电量只剩1%也想回信息的人", "你是我穷极一生不想醒来的梦"],
 	bg_style: "bg_custom",
